@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="253.0dp"
+        android:layout_height="217.5dp"
+        android:id="@+id/linearLayout1"
+        android:layout_centerInParent="true">
+        <TextView
+            android:text="You must be logged in"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/youMustBeLoggedInTextView"
+            android:gravity="center" />
+        <Button
+            android:text="Login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            
+                android:textAllCaps="false" 
+            android:id="@+id/LoginBn"
+            android:layout_marginTop="18.0dp"
+            android:layout_marginLeft="50.0dp"
+            android:background="@drawable/default_button"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <Button
+            android:text="Registration"
+            
+                android:textAllCaps="false" 
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/registrationBn"
+            android:layout_marginLeft="50.0dp"
+            android:layout_marginTop="8.0dp"
+            android:background="@drawable/default_button"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <Button
+            android:text="Cancel"
+            
+                android:textAllCaps="false" 
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/CancelBn"
+            android:layout_marginLeft="50.0dp"
+            android:layout_marginTop="8.0dp"
+            android:background="@drawable/default_button"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="#FFFF">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_layout"
+            android:background="#FFFF">
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/image_upload"
+                android:layout_marginTop="14.0dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout2"
+                android:layout_marginTop="15.0dp">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:hint="Title"
+                    android:layout_marginTop="170dp"
+                    android:layout_gravity="center_horizontal" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:text="Choose category:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#A9A9A9"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8.5dp" />
+            <Spinner
+                android:id="@+id/categories_spinner"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Location"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Description (minimum 30 symbols)"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Price per person"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Minimum number of people"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/min_capacity"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Maximum number of people"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/max_capacity"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout1">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Duration (number of hours)"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/duration"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="City"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/meet_place_city"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Address"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/meet_place_address"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Latitude"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lat"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Longitude"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lng"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone" />
+            </android.support.design.widget.TextInputLayout>
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/activityIndicator"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateOnly="true"
+                android:layout_marginTop="20dp"
+                android:keepScreenOn="true"
+                android:visibility="gone" />
+            <Button
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/default_button"
+                android:textSize="25sp"
+                android:text="Choose location by map"
+                android:id="@+id/chooseLocationMapBn"
+                android:textAllCaps="false" />
+            <Button
+                android:text="Apply Changes"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/applyChangesBn"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/default_button"
+                android:textSize="30sp"
+                android:layout_marginBottom="20.5dp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

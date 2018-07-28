@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF"
+            android:id="@+id/linearLayout1">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout1">
+                <EditText
+                    android:hint="Email"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login_email"
+                    android:layout_marginTop="270dp"
+                    android:layout_gravity="center_horizontal" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout2">
+                <EditText
+                    android:hint="Password"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login_password"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+          <ProgressBar
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:id="@+id/activityIndicator"
+              android:layout_gravity="center_horizontal"
+              android:indeterminateOnly="true"
+              android:layout_marginTop="20dp"
+              android:keepScreenOn="true"
+              android:visibility="gone" />
+            <Button
+                android:text="Login"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_button"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                
+                android:textAllCaps="false" 
+                android:background="@drawable/default_button"
+                android:textSize="30sp" />
+            <Button
+                android:text="Cancel"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelBn"
+                
+                android:textAllCaps="false" 
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/default_button"
+                android:textSize="30sp" />
+            <TextView
+                android:text="Forget your password?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forgetYourPassword"
+                android:textColor="#4169E1"
+                android:layout_marginTop="26.5dp"
+                android:gravity="center"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

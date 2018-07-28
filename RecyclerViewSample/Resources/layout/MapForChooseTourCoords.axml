@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <fragment
+                class="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout13">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout14"
+                    android:layout_marginTop="33.0dp">
+                    <EditText
+                        android:id="@+id/searchET"
+                        android:hint="Search by address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:layout_marginLeft="3.5dp" />
+                    <Button
+                        android:text="OK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/default_button"
+                        android:id="@+id/searchBn"
+                        android:layout_marginTop="4.5dp"
+                        android:layout_marginRight="4.5dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout15">
+                    <TextView
+                        android:text="Long tap to choose the place"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/longTapTV"
+                        android:paddingTop="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#FF0000"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.5dp" />
+                    <Button
+                        android:id="@+id/centerPositionBn"
+                        android:background="@drawable/centerdirection"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginLeft="16.5dp"
+                        android:layout_marginTop="9.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout12"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:text="Apply"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/applyChangesBn"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/default_button"
+                    android:textSize="30sp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="#FFFF">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_layout"
+            android:background="#FFFF">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout1">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register_email"
+                    android:hint="Email"
+                    android:layout_marginTop="170dp"
+                    android:layout_gravity="center_horizontal" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout2">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Password"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register_password"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout3">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Confirm Password"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register_password_confirm"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout4">
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="300dp"
+                    android:hint="Name"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:id="@+id/countries"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/activityIndicator"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateOnly="true"
+                android:layout_marginTop="20dp"
+                android:keepScreenOn="true"
+                android:visibility="gone" />
+            <Button
+                android:text="Register"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_button"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/default_button"
+                android:textSize="30sp"
+                android:textAllCaps="false" />
+            <Button
+                android:text="Cancel"
+                android:layout_width="299.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelBn"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/default_button"
+                android:textSize="30sp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

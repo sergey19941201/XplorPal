@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:id="@+id/Change"
+    android:showAsAction="never"
+    android:title="Change Destination" />
+  <item
+    android:id="@+id/Filter"
+    android:showAsAction="never"
+    android:title="Filter" />
+ <item
+  android:id="@+id/AddExperience"
+  android:showAsAction="never"
+  android:title="Add Experience (for pals)" />
+</menu>

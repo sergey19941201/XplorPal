@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/filter">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="63.5dp"
+        android:id="@+id/linearLayout2"
+        android:gravity="top"
+        android:background="#50000000">
+        <Button
+            android:layout_width="50dp"
+            
+                android:textAllCaps="false" 
+            android:layout_height="50dp"
+            android:id="@+id/leftDrawerBN"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop="7.0dp"
+            android:background="@drawable/leftMenu" />
+        <TextView
+            android:text="Experiences"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="27.0dp"
+            android:id="@+id/experienceTitleTV"
+            android:layout_marginTop="18.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="57.5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/searchBn"
+            
+                android:textAllCaps="false" 
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_icon"
+            android:layout_marginRight="50.5dp"
+            android:layout_marginTop="7.0dp" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            
+                android:textAllCaps="false" 
+            android:id="@+id/contextMenuBn"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/AlignRight"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginTop="7.0dp" />
+    </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_content">
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/activityIndicator"
+                android:indeterminateOnly="true"
+                android:keepScreenOn="true" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="#15000000" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

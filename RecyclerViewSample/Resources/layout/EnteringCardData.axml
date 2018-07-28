@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="50.0dp">
+        <TextView
+            android:text="Enter your card info"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_info_label"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:id="@+id/cardET"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginRight="10.5dp"
+            android:hint="Card number" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:weightSum="1.0">
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/monthET"
+                android:inputType="phone"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:layout_marginLeft="10.5dp"
+                android:hint="Month (xx)" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:id="@+id/yearET"
+                android:inputType="phone"
+                android:layout_marginLeft="10.5dp"
+                android:hint="Year(xx)" />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cvvET"
+            android:inputType="phone"
+            android:layout_weight="1"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginRight="10.5dp"
+            android:hint="CVV" />
+    </LinearLayout>
+    <Button xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmBn"
+        android:background="@drawable/default_button"
+        app:textAllCaps="false"
+        android:layout_marginLeft="10.5dp"
+        android:layout_marginRight="10.5dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7.0dp" />
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activityIndicator"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateOnly="true"
+        android:layout_marginTop="20dp"
+        android:keepScreenOn="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp" />
+</RelativeLayout>

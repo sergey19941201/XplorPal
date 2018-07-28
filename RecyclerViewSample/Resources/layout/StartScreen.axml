@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@drawable/xplorpal_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_marginTop="150dp" />
+    <Button
+        android:text="Login"
+        android:layout_width="299.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login"
+        android:layout_marginTop="71.0dp"
+        fontPath="Assets/Dosis-Regular.otf"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/default_button"
+        android:textAllCaps="false" />
+    <Button
+        android:text="Register "
+        android:layout_width="299.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        android:layout_marginTop="8.0dp"
+        fontPath="Assets/Dosis-Regular.otf"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/default_button"
+        android:textAllCaps="false" />
+</LinearLayout>

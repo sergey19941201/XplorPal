@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="84.5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#00000000"
+        cardview:cardCornerRadius="0dp">
+        <TextView
+            android:text="experience_id"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/experience_id_TV"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout2"
+            android:background="#20000000">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ab7a79"
+                    android:textSize="22sp"
+                    fontPath="fonts/HelveticaNeueLight.ttf"
+                    android:text="Date"
+                    android:id="@+id/DateTV"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21.0dp"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ab7a79"
+                    android:textSize="17sp"
+                    fontPath="fonts/HelveticaNeueLight.ttf"
+                    android:id="@+id/DayTV"
+                    android:gravity="center"
+                    android:text="Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="30.0dp" />
+            </LinearLayout>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectTV"
+                android:text="Select"
+                android:background="@drawable/default_button"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12.0dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

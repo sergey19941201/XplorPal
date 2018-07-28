@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/filter"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="46.0dp"
+        android:weightSum="1"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/cancel"
+            android:background="@null" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:textColor="#ffffff" />
+        <TextView
+            android:text="Done"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:id="@+id/doneTV"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <ProgressBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/activityIndicator"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateOnly="true"
+            android:layout_marginTop="20dp"
+            android:keepScreenOn="true"
+            android:visibility="gone" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="346.5dp"
+            android:layout_height="50.5dp"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="71.0dp"
+            android:gravity="center_horizontal"
+            android:weightSum="1"
+            android:background="@drawable/FilterLInear">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

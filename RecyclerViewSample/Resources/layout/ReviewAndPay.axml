@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/DateBack"
+    android:id="@+id/linearLayout3">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:background="#ffc58786">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="40.5dp"
+            android:id="@+id/linearLayout1"
+            android:background="#ab7a79">
+            <ImageButton
+                android:layout_width="37.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/back"
+                android:src="@drawable/back"
+                android:background="@null" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="318.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/myShoppingCartTV"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="My Shopping Cart" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_centerInParent="true">
+        <TextView
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTV"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#722F37" />
+        <TextView
+            android:text="Reservation date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reservationDate"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <TextView
+            android:text="Travellers"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/travellersTV"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <TextView
+            android:text="Total"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalTV"
+            android:layout_marginTop="20dp"
+            android:textColor="#722F37"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <Button
+            android:text="Pay for experience"
+            android:layout_width="299.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/payForExperience"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/default_button"
+            android:textSize="30sp"
+            android:textAllCaps="false" />
+        <Button
+            android:text="Cancel"
+            android:layout_width="299.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelBn"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/default_button"
+            android:textSize="30sp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

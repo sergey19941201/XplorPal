@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="Navigation">Click to Navigate</string>
+  <string name="ApplicationName">RecyclerViewSample</string>
+
+  <string name="planet_prompt">Choose a planet</string>
+  <string-array name="planets_array">
+    <item>Choose type of experience</item>
+    <item>Sports</item>
+    <item>Music</item>
+    <item>Romance</item>
+    <item>Adventure</item>
+    <item>Food</item>
+    <item>Art/Architecture</item>
+    <item>Photography</item>
+    <item>Bar hopping</item>
+    <item>Sight-seeing</item>
+    <item>Wine tasting</item>
+    <item>Classes</item>
+    <item>Wedding planning</item>
+    <item>Gardening</item>
+  </string-array>
+</resources>

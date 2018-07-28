@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/DateBack"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="40.5dp"
+        android:id="@+id/linearLayout1"
+        android:background="#ab7a79">
+        <ImageButton
+            android:layout_width="37.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:background="@null" />
+        <TextView
+            android:text="Check Availability"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="318.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160.0dp"
+        android:weightSum="1"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="97.5dp"
+            android:layout_weight="0.3"
+            android:id="@+id/Title"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="#d7aba9" />
+        <TextView
+            android:text="Select number of travelers"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="0.7"
+            android:background="#6d6d6d"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout3"
+        android:weightSum="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="51.0dp"
+                android:id="@+id/linearLayout5"
+                android:layout_marginTop="7.5dp">
+                <TextView
+                    android:text="Number of people"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/travelersTV"
+                    android:gravity="center"
+                    android:textColor="#ab7a79"
+                    android:layout_marginLeft="25.0dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout7"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25.0dp">
+                    <ImageButton
+                        android:layout_width="45.5dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/minus"
+                        android:src="@drawable/minus"
+                        android:background="@null" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/adultnumber"
+                        android:textColor="#ab7a79"
+                        android:layout_marginLeft="17.0dp"
+                        android:gravity="center" />
+                    <ImageButton
+                        android:layout_width="46.0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plus"
+                        android:src="@drawable/plus"
+                        android:background="@null"
+                        android:layout_marginLeft="17.0dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="20.5dp"
+            android:id="@+id/linearLayout4">
+            <Button
+                android:text="Next"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:id="@+id/nextbutton"
+                android:background="#D2691E"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

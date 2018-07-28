@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/DateBack"
+    android:id="@+id/linearLayout3">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="40.5dp"
+        android:id="@+id/linearLayout1"
+        android:background="#ab7a79">
+        <ImageButton
+            android:layout_width="37.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:background="@null" />
+        <TextView
+            android:text="About"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="318.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="14.5dp">
+        <TextView
+            android:text="Explore the world’s coolest experiences by connecting with locals (we call them pals!) who have unique knowledge and experience with a particular travel destination. Choose from a variety of interesting experiences rather than standard run of the mill tours. You might be able to find a cycling tour in Prague, go to a soccer game in Rome, visit a pub in Munich, take a cooking lesson in France, ride elephants in Thailand or hike on scenic hills in Sri Lanka with pals who know the local culture and area really well"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTV"
+            android:gravity="center"
+            android:textColor="#ab7a79" />
+    </LinearLayout>
+</LinearLayout>
